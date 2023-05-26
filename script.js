@@ -93,6 +93,10 @@ const loadData = () => {
     winsOne = Number(localStorage.winsOne);
     winsTwo = Number(localStorage.winsTwo);
     countRound = Number(localStorage.countRound);
+    
+    if (countRound === 10) {
+        restartGame()
+    }
 }
 
 
